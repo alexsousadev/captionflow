@@ -5,7 +5,7 @@ Este projeto é uma ferramenta aplicada à educação, focada em transformar o c
 ## Funcionalidades
 
 - [x] Extração do ID do vídeo e importação na página
-- [ ] Extração de transcrições de vídeos do YouTube
+- [x] Extração de transcrições de vídeos do YouTube
 - [ ] Inclusão de vídeos do YouTube na plataforma
 - [ ] Sincronização em tempo real com o player
 - [ ] Organização da transcrição como um roteiro teatral
