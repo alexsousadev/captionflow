@@ -11,8 +11,6 @@ const youtubeSchema = z.string().trim().transform((value)=> {
     return null;
 })
 
-
-// Extract the YouTube video ID from the URL
 export function extractYoutubeVideoId(input: string): string | null {
     try {
         const parsedUrl = youtubeSchema.safeParse(input);

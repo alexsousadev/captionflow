@@ -38,8 +38,9 @@ class TranscriptService {
             contents: contents,
           });
 
+        console.log(response?.text);
+
         return response?.text ?? '';
     }
 }
-
 export default TranscriptService.getInstance();
