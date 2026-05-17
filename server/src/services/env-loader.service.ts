@@ -1,7 +1,7 @@
 import dotenv from "dotenv";
 import path from "path";
 
-const serverRoot = path.resolve(import.meta.dirname, "..", "..");
+const serverRoot = process.cwd();
 
 class EnvLoader {
   private static instance: EnvLoader;

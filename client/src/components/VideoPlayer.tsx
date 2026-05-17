@@ -14,19 +14,8 @@ function embedSrc(videoId: string) {
   return `https://www.youtube.com/embed/${videoId}?${q.toString()}`;
 }
 
-export default function YoutubeVideoPlayer({ videoId }: { videoId: string }) {
+export default function YoutubeVideoPlayer({ videoId, subtitlesData }: { videoId: string, subtitlesData: Array<{start: string, text: string}> }) {
   const iframeRef = useRef<HTMLIFrameElement>(null);
-
-  const subtitlesData = [
-    {
-      "start": "00:00",
-      "text": "Example subtitle 1"
-    },
-    {
-      "start": "00:02",
-      "text": "Example subtitle 2"
-    }
-  ];
 
   const handleSeek = (timeStr: string) => {
     const seconds = convertTimeToSeconds(timeStr);
